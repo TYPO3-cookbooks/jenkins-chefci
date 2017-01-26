@@ -2,6 +2,6 @@
   include_recipe recipe
 end
 
-%w(_jenkins_setup).each do |local_recipe|
+%w(_jenkins_setup _jenkins_auth).each do |local_recipe|
   include_recipe "::#{local_recipe}"
 end
