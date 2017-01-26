@@ -23,3 +23,9 @@ suites:
       inspec_tests:
         - test/smoke/default
     attributes:
+    driver_config:
+      network:
+      # Use DHCP to be save for multiple instances
+      - ["private_network", {type: "dhcp"}]
+      # Assign IP directly, if you start only one instance at a time
+      # - ["private_network", {ip: "192.168.88.23"}]
