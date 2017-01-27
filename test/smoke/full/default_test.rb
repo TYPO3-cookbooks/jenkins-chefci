@@ -1,3 +1,3 @@
 describe package('chefdk') do
-  it { should_not be_installed }
+  it { should be_installed }
 end

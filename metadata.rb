@@ -12,5 +12,6 @@ source_url       'https://github.com/TYPO3-cookbooks/jenkins-chefci' if respond_
 supports         'debian'
 supports         'ubuntu'
 
+depends          'chef-dk'
 depends          'java'
 depends          'jenkins'
