@@ -4,6 +4,14 @@ driver:
   customize:
     cpus: 4
     memory: 2048
+  network:
+    # Allow access to the Jenkins webui which is useful when troubleshooting
+    - - forwarded_port
+      - guest: 8080
+        host: 9090
+        auto_correct: true
+    # Use DHCP to be save for multiple instances
+    - ["private_network", {type: "dhcp"}]
 
 provisioner:
   name: chef_zero
@@ -16,16 +24,15 @@ platforms:
   - name: debian-8.6
 
 suites:
-  - name: default
+  - name: essentials
     run_list:
       - recipe[jenkins-chefci::default]
     verifier:
       inspec_tests:
         - test/smoke/default
-    attributes:
-    driver_config:
-      network:
-      # Use DHCP to be save for multiple instances
-      - ["private_network", {type: "dhcp"}]
-      # Assign IP directly, if you start only one instance at a time
-      # - ["private_network", {ip: "192.168.88.23"}]
+  - name: full
+    run_list:
+      - recipe[jenkins-chefci::default]
+    verifier:
+      inspec_tests:
+        - test/smoke/default
