@@ -32,7 +32,7 @@ suites:
         - test/smoke/default
   - name: full
     run_list:
-      - recipe[jenkins-chefci::default]
+      - recipe[jenkins-chefci::full]
     verifier:
       inspec_tests:
-        - test/smoke/default
+        - test/smoke/full
