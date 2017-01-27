@@ -18,28 +18,28 @@ default['jenkins_chefci']['jenkins_plugins'] = %w(
   ant:1.4
   antisamy-markup-formatter:1.5
   authentication-tokens:1.3
-  blueocean:1.0.0-b19
+  blueocean:1.0.0-b20
   blueocean-autofavorite:0.5
-  blueocean-commons:1.0.0-b19
-  blueocean-config:1.0.0-b19
-  blueocean-dashboard:1.0.0-b19
+  blueocean-commons:1.0.0-b20
+  blueocean-config:1.0.0-b20
+  blueocean-dashboard:1.0.0-b20
   blueocean-display-url:1.3
-  blueocean-events:1.0.0-b19
-  blueocean-git-pipeline:1.0.0-b19
-  blueocean-github-pipeline:1.0.0-b19
-  blueocean-i18n:1.0.0-b19
-  blueocean-jwt:1.0.0-b19
-  blueocean-personalization:1.0.0-b19
-  blueocean-pipeline-api-impl:1.0.0-b19
-  blueocean-rest:1.0.0-b19
-  blueocean-rest-impl:1.0.0-b19
-  blueocean-web:1.0.0-b19
+  blueocean-events:1.0.0-b20
+  blueocean-git-pipeline:1.0.0-b20
+  blueocean-github-pipeline:1.0.0-b20
+  blueocean-i18n:1.0.0-b20
+  blueocean-jwt:1.0.0-b20
+  blueocean-personalization:1.0.0-b20
+  blueocean-pipeline-api-impl:1.0.0-b20
+  blueocean-rest:1.0.0-b20
+  blueocean-rest-impl:1.0.0-b20
+  blueocean-web:1.0.0-b20
   bouncycastle-api:2.16.0
   branch-api:1.11.1
   buildtriggerbadge:2.7
   clone-workspace-scm:0.6
   cloudbees-folder:5.16
-  credentials:2.1.10
+  credentials:2.1.11
   credentials-binding:1.10
   display-url-api:0.5
   docker-commons:1.6
@@ -87,10 +87,11 @@ default['jenkins_chefci']['jenkins_plugins'] = %w(
   piwikanalytics:1.2.0
   plain-credentials:1.3
   PrioritySorter:3.5.0
+  pubsub-light:1.6
   scm-api:1.3
   script-security:1.25
   slack:2.1
-  sse-gateway:1.13
+  sse-gateway:1.15
   ssh-credentials:1.12
   structs:1.5
   token-macro:2.0
