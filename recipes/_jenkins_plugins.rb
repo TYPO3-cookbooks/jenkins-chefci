@@ -3,7 +3,11 @@ node['jenkins_chefci']['jenkins_plugins'].each_with_index do |plugin_with_versio
   jenkins_plugin plugin do
     version version
     install_deps false
-    # we want to restart Jenkins after the last plugin installation
-    notifies :execute, 'jenkins_command[safe-restart]', :immediately if index == node['jenkins_chefci']['jenkins_plugins'].length - 1
   end
+end
+
+# we want to restart Jenkins if any plugin changed
+file File.join(Chef::Config[:file_cache_path], 'jenkins-plugins-last-state') do
+  content node['jenkins_chefci']['jenkins_plugins']
+  notifies :execute, 'jenkins_command[safe-restart]', :immediately
 end
