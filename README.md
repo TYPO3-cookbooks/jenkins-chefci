@@ -10,7 +10,7 @@ It is subject of a talk at [Config Management Camp 2017](http://cfgmgmtcamp.eu/s
 - Private key for chef-client to communincate with the Jenkins API is stored in `/etc/chef-jenkins-api.key` by default. (include this in your backup or when you move the Jenkins installation to a new host)
 
 
-- The Github API token can be set in a wrapper cookbook using `node.run_state[:jenkins_chefci_github_token]`, similar to the Jenkins cookbooks `node.run_state[:jenkins_private_key]`.
+- The Github API user and token can be set in a wrapper cookbook using `node.run_state[:jenkins_chefci_github_user]` / `node.run_state[:jenkins_chefci_github_token]`, similar to the Jenkins cookbooks `node.run_state[:jenkins_private_key]`.
 
 - For testing purposes (test-kitchen), the Github user and password will be read from environment variables:
 
