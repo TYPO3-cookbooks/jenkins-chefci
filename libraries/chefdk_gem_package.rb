@@ -5,8 +5,6 @@ class Chef
 
     resource_name :jenkins_chefci_chefdk_gem_package
 
-    actions :install, :remove
-
     def initialize(name, run_context = nil)
       super
 
