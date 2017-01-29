@@ -15,3 +15,5 @@ It is subject of a talk at [Config Management Camp 2017](http://cfgmgmtcamp.eu/s
 - For testing purposes (test-kitchen), the Github user and password will be read from environment variables:
 
     JENKINS_GITHUB_USER=johndoe JENKINS_GITHUB_TOKEN=123456 kitchen converge full-debian
+
+- **Manually** set up an _organization_ hook on Github, pointing to `https://jenkins.example.com/github-webhook/` with _Push_ and _Repository_ events enabled. 
