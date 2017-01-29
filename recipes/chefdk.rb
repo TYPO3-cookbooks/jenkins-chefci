@@ -28,6 +28,9 @@ package "build-essential"
   end
 end
 
+# Ideally, this should work as follows:
+# jenkins_chefci_chefdk_gem_package 'kitchen-docker'
+
 ###########################
 # Chef / Knife
 ###########################
