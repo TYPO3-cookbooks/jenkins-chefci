@@ -70,7 +70,7 @@
       <repoOwner><%= @name %></repoOwner>
       <scanCredentialsId><%= @scanCredentials %></scanCredentialsId>
       <checkoutCredentialsId>SAME</checkoutCredentialsId>
-      <pattern>.*</pattern>
+      <pattern><%= @repository_pattern %></pattern>
       <buildForkPRMerge>false</buildForkPRMerge>
     </org.jenkinsci.plugins.github__branch__source.GitHubSCMNavigator>
   </navigators>

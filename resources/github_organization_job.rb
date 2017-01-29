@@ -1,11 +1,7 @@
 property :login, String, name_property: true
 property :cookbook, String
-
-#load_current_value do
-#  if ::File.exist?('/var/www/html/index.html')
-#    homepage IO.read('/var/www/html/index.html')
-#  end
-#end
+property :credentials_id, String
+property :repository_pattern, String, default: '.*'
 
 action :create do
 
@@ -14,8 +10,9 @@ action :create do
   template job_xml do
     source "jenkins-jobs/github-organization-folder/job-config.xml.erb"
     variables(
-      name: name,
-      scanCredentials: 'github-chefcitypo3org-token'
+      name: login,
+      scanCredentials: credentials_id,
+      repository_pattern: repository_pattern
       # TODO there are few more paramters, e.g. about building PRs..
     )
     cookbook cookbook

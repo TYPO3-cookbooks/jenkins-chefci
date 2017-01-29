@@ -35,6 +35,11 @@ suites:
       inspec_tests:
         - test/smoke/default
   - name: full
+    attributes:
+      jenkins_chefci:
+        github_credentials:
+          login: <%= ENV['JENKINS_GITHUB_USER'] %>
+          token: <%= ENV['JENKINS_GITHUB_TOKEN'] %>
     run_list:
       - recipe[jenkins-chefci::full]
     verifier:
