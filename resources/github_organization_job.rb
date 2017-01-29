@@ -3,6 +3,8 @@ property :cookbook, String
 property :credentials_id, String
 property :repository_pattern, String, default: '.*'
 
+default_action :create
+
 action :create do
 
   job_xml = ::File.join(Chef::Config[:file_cache_path], "github-org-#{login}.xml")
