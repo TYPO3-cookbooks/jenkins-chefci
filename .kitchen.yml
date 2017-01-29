@@ -38,7 +38,7 @@ suites:
     attributes:
       jenkins_chefci:
         github_credentials:
-          login: <%= ENV['JENKINS_GITHUB_USER'] %>
+          login: <%= ENV['JENKINS_GITHUB_LOGIN'] %>
           token: <%= ENV['JENKINS_GITHUB_TOKEN'] %>
     run_list:
       - recipe[jenkins-chefci::full]
