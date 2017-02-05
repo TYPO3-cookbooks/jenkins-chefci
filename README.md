@@ -17,3 +17,5 @@ It is subject of a talk at [Config Management Camp 2017](http://cfgmgmtcamp.eu/s
     JENKINS_GITHUB_USER=johndoe JENKINS_GITHUB_TOKEN=123456 kitchen converge full-debian
 
 - **Manually** set up an _organization_ hook on Github, pointing to `https://jenkins.example.com/github-webhook/` with _Push_ and _Repository_ events enabled. 
+
+- The client key from your workstation used to connect to your Chef Server will automatically be copied into the VM, if `JENKINS_COPY_CHEF_CREDENTIALS=1`. Otherwise, you have to manually paste a valid client key into `/var/lib/jenkins/.chef/client.pem` to allow interaction with the Chef Server.
