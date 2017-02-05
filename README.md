@@ -19,3 +19,5 @@ It is subject of a talk at [Config Management Camp 2017](http://cfgmgmtcamp.eu/s
 - **Manually** set up an _organization_ hook on Github, pointing to `https://jenkins.example.com/github-webhook/` with _Push_ and _Repository_ events enabled. 
 
 - The client key from your workstation used to connect to your Chef Server will automatically be copied into the VM, if `JENKINS_COPY_CHEF_CREDENTIALS=1`. Otherwise, you have to manually paste a valid client key into `/var/lib/jenkins/.chef/client.pem` to allow interaction with the Chef Server.
+
+- If encounter a `NullPointerException` at the end of your pipeline runs, just save the Jenkins system config once (because the Slack plugin is stupid).
