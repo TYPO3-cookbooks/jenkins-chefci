@@ -13,28 +13,28 @@ default['jenkins_chefci']['jenkins_private_key_path'] = '/etc/chef-jenkins-api.k
 default['jenkins_chefci']['jenkins_plugins'] = %w(
   ace-editor:1.1
   analysis-collector:1.50
-  analysis-core:1.84
+  analysis-core:1.86
   ansicolor:0.5.0
   ant:1.4
   antisamy-markup-formatter:1.5
   authentication-tokens:1.3
-  blueocean:1.0.0
+  blueocean:1.0.1
   blueocean-autofavorite:0.6
-  blueocean-commons:1.0.0
-  blueocean-config:1.0.0
-  blueocean-dashboard:1.0.0
+  blueocean-commons:1.0.1
+  blueocean-config:1.0.1
+  blueocean-dashboard:1.0.1
   blueocean-display-url:1.5.1
-  blueocean-events:1.0.0
-  blueocean-git-pipeline:1.0.0
-  blueocean-github-pipeline:1.0.0
-  blueocean-i18n:1.0.0
-  blueocean-jwt:1.0.0
-  blueocean-personalization:1.0.0
-  blueocean-pipeline-api-impl:1.0.0
+  blueocean-events:1.0.1
+  blueocean-git-pipeline:1.0.1
+  blueocean-github-pipeline:1.0.1
+  blueocean-i18n:1.0.1
+  blueocean-jwt:1.0.1
+  blueocean-personalization:1.0.1
+  blueocean-pipeline-api-impl:1.0.1
   blueocean-pipeline-editor:0.2.0
-  blueocean-rest:1.0.0
-  blueocean-rest-impl:1.0.0
-  blueocean-web:1.0.0
+  blueocean-rest:1.0.1
+  blueocean-rest-impl:1.0.1
+  blueocean-web:1.0.1
   bouncycastle-api:2.16.1
   branch-api:2.0.8
   buildtriggerbadge:2.8.1
@@ -49,7 +49,7 @@ default['jenkins_chefci']['jenkins_plugins'] = %w(
   embeddable-build-status:1.9
   external-monitor-job:1.7
   favorite:2.0.4
-  gerrit-trigger:2.23.0
+  gerrit-trigger:2.23.1
   git:3.2.0
   git-client:2.4.1
   git-server:1.7
@@ -63,18 +63,18 @@ default['jenkins_chefci']['jenkins_plugins'] = %w(
   icon-shim:2.0.3
   jackson2-api:2.7.3
   javadoc:1.4
-  job-dsl:1.59
+  job-dsl:1.60
   jquery-detached:1.2.1
   junit:1.20
   ldap:1.14
   mailer:1.20
-  matrix-auth:1.4
+  matrix-auth:1.5
   matrix-project:1.9
   maven-plugin:2.15.1
   metrics:3.1.2.9
   momentjs:1.1.1
   pam-auth:1.3
-  pipeline-build-step:2.4
+  pipeline-build-step:2.5
   pipeline-github-lib:1.0
   pipeline-graph-analysis:1.3
   pipeline-input-step:2.5
@@ -99,7 +99,7 @@ default['jenkins_chefci']['jenkins_plugins'] = %w(
   structs:1.6
   token-macro:2.1
   variant:1.1
-  warnings:4.60
+  warnings:4.62
   windows-slaves:1.3.1
   workflow-aggregator:2.5
   workflow-api:2.12
