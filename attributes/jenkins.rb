@@ -18,7 +18,6 @@ default['jenkins_chefci']['jenkins_plugins'] = %w(
   ant:1.4
   antisamy-markup-formatter:1.5
   authentication-tokens:1.3
-  authorize-project:1.3.0
   blueocean:1.0.1
   blueocean-autofavorite:0.6
   blueocean-commons:1.0.1
