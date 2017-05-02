@@ -14,4 +14,4 @@ supports         'ubuntu'
 
 depends          'chef-dk'
 depends          'java'
-depends          'jenkins'
+depends          'jenkins', '>= 5.0.1'
