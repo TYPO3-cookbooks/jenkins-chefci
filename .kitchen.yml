@@ -70,6 +70,10 @@ suites:
     verifier:
       inspec_tests:
         - test/smoke/default
+    attributes:
+      java:
+        oracle:
+          accept_oracle_download_terms: true
   - name: full
     attributes:
       jenkins_chefci:
@@ -80,6 +84,9 @@ suites:
         knife_config: <%= client_config.to_json %>
         knife_client_key: '<%= client_key_contents_escaped %>'
 <% end %>
+      java:
+        oracle:
+          accept_oracle_download_terms: true
     run_list:
       - recipe[jenkins-chefci::full]
     verifier:
