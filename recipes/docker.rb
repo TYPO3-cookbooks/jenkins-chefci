@@ -4,6 +4,9 @@ Installs Docker
 #>
 =end
 
+# does not work on the Jenkins server...
+return if node['virtualization'] && node['virtualization']['role'] == 'guest' && node['virtualization']['system'] == 'docker'
+
 apt_repository 'docker' do
   uri 'https://apt.dockerproject.org/repo'
   distribution "#{node['platform']}-#{node['lsb']['codename']}"
