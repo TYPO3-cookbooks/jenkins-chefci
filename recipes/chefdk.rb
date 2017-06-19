@@ -28,6 +28,13 @@ package "build-essential"
   end
 end
 
+# # compatibility with our chefdk/test-kitchen version
+gem_package "kitchen-dokken" do
+  gem_binary "/opt/chefdk/embedded/bin/gem"
+  options "--no-document --no-user-install"
+  version "2.1.1"
+end
+
 # Ideally, this should work as follows:
 # jenkins_chefci_chefdk_gem_package 'kitchen-docker'
 
