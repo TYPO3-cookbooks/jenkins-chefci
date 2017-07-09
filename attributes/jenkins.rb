@@ -1,3 +1,6 @@
+#<> Install WAR on Debian <= 8, default to package otherwise
+default['jenkins']['master']['install_method'] = 'war' if node['platform'] == 'debian' && node['platform_version'].to_i <= 8
+
 #<> Disable Jenkins 2.0 setup wizard - currently until this is fixed: https://github.com/chef-cookbooks/jenkins/pull/471
 default['jenkins']['master']['jvm_options'] = '-Djenkins.install.runSetupWizard=false'
 
