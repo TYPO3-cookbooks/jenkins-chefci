@@ -59,7 +59,7 @@ platforms:
   - name: ubuntu-16.04
     run_list:
       - recipe[apt]
-  - name: debian-8.6
+  - name: debian-8.8
     run_list:
       - recipe[apt]
 
